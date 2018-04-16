@@ -1,0 +1,14 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.Creator>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<section class="section section--full-height background-image-full overlay overlay--dark section--content-center"
+style="background-image:url('@Model.Content.BackgroundImage.Url');">
+    <div class="section-header" style="background:rgba(255,255,255,0.8);padding:40px;">
+        <h2>@Model.Content.Title</h2>
+        @Model.Content.BodyText
+        <a class="button button--border--solid" href="@Model.Content.BackgroundImage.Url" style="color:#FFF;background:rgb(32, 88, 201);">Generate some code!</a>
+    </div>
+</section>
