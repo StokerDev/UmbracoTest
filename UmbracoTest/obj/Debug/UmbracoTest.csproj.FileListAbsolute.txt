@@ -335,7 +335,6 @@ C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\bin\Umbraco.ModelsBuilder.pd
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\bin\umbraco.providers.xml
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\bin\Umbraco.Web.UI.xml
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\bin\UmbracoExamine.xml
-C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csprojResolveAssemblyReference.cache
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csproj.CoreCompileInputs.cache
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csproj.CopyComplete
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.dll

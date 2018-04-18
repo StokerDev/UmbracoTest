@@ -1,0 +1,46 @@
+﻿<script>
+    function ImportEditController($scope, $routeParams) {
+        $scope.content = { tabs: [{ id: 1, label: "Import Data" }, { id: 2, label: "New Tab" }] };
+
+        $scope.EditMode = function() {
+            return $routeParams.create == 'true';
+        };
+    }
+</script>
+
+<div ng-controller="ImportEditController">
+
+    <umb-panel>
+        <umb-header tabs="content.tabs">
+            <div class="umb-headline-editor-wrapper span12 ng-scope">
+                <h1 class="ng-binding">Import {{id}}</h1>
+            </div>
+        </umb-header>
+        <umb-tab-view>
+
+            <umb-tab id="tab1">
+                <div class="umb-pane">
+                    <form action="" method="post">
+                        <h3>Upload a file</h3><br />
+                        Import data by uploading a file<br /><br />
+                        <input type="file" ng-model="file" umb-file-upload style="font-size:12px;line-height:1px;" />
+                        <br /><br /><br />
+                        <input type="submit" class="btn umb-button__button btn-success umb-button--" value="Upload" />
+                    </form>
+                    <p ng-show="EditMode()">
+                        <span class="label label-warning">In create mode, this label is only showed when the controller sees the create-querystring item.</span>
+                    </p>
+                </div>
+            </umb-tab>
+
+            <umb-tab id="tab2">
+                <div class="umb-pane">
+                    <h3>New tab</h3><br />
+                    Place some content here
+                </div>
+            </umb-tab>
+
+        </umb-tab-view>
+    </umb-panel>
+
+</div>

@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "b0a1856e942954a1")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.3")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fa71997135337097")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -1164,6 +1164,15 @@ namespace Umbraco.Web.PublishedContentModels
 		public IPublishedContent CreateButton
 		{
 			get { return this.GetPropertyValue<IPublishedContent>("createButton"); }
+		}
+
+		///<summary>
+		/// Test
+		///</summary>
+		[ImplementPropertyType("test")]
+		public string Test
+		{
+			get { return this.GetPropertyValue<string>("test"); }
 		}
 
 		///<summary>
