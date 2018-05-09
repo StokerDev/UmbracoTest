@@ -164,7 +164,6 @@ C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\bin
 C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\bin\umbraco.providers.xml
 C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\bin\Umbraco.Web.UI.xml
 C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\bin\UmbracoExamine.xml
-C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csprojResolveAssemblyReference.cache
 C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csproj.CoreCompileInputs.cache
 C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csproj.CopyComplete
 C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.dll
@@ -340,3 +339,4 @@ C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csproj
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.dll
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.pdb
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csprojResolveAssemblyReference.cache
+C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csprojAssemblyReference.cache

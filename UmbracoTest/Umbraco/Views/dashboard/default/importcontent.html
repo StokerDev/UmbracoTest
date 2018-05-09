@@ -1,0 +1,7 @@
+﻿<h3>Upload a file</h3><br />
+Import data by uploading a file<br /><br />
+<input type="file" ng-model="file" umb-file-upload style="font-size:12px;line-height:1px;" /><br /><br />
+<button type="button" class="btn umb-button__button btn-success umb-button--" ng-click="Import('XML')">Upload</button>
+<p ng-show="EditMode()">
+    <span class="label label-warning">In create mode, this label is only showed when the controller sees the create-querystring item.</span>
+</p>
