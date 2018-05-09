@@ -1,7 +1,16 @@
 ﻿<h3>Upload a file</h3><br />
-Import data by uploading a file<br /><br />
-<input type="file" ng-model="file" umb-file-upload style="font-size:12px;line-height:1px;" /><br /><br />
-<button type="button" class="btn umb-button__button btn-success umb-button--" ng-click="Import('XML')">Upload</button>
-<p ng-show="EditMode()">
-    <span class="label label-warning">In create mode, this label is only showed when the controller sees the create-querystring item.</span>
-</p>
+<p>Import data by uploading a file</p><br />
+<input type="file" id="importFile" umb-file-upload style="font-size:12px;line-height:1px;" /><br /><br />
+<button type="button" class="btn umb-button__button btn-success umb-button--">Upload</button>
+
+<script>
+    $(document).ready(function () {
+        $('#importFile').on("change", function () {
+            var filePath = $(this).val();
+            var fileExt = filePath.substr(filePath.length - 4);
+            if (fileExt === ".xml") {
+                // Perform some actions here...
+            }
+        });
+    });
+</script>
