@@ -1,7 +1,7 @@
 ﻿<h3>Upload a file</h3><br />
 <p>Import data by uploading a file</p><br />
 <input type="file" id="importFile" umb-file-upload style="font-size:12px;line-height:1px;" /><br /><br />
-<button type="button" class="btn umb-button__button btn-success umb-button--">Upload</button>
+<button type="button" id="btnUpload" class="btn umb-button__button btn-success umb-button--">Upload</button>
 
 <script>
     $(document).ready(function () {
@@ -9,7 +9,7 @@
             var filePath = $(this).val();
             var fileExt = filePath.substr(filePath.length - 4);
             if (fileExt === ".xml") {
-                // Perform some actions here...
+                // Perform some action here...
             }
         });
     });

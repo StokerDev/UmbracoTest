@@ -4,7 +4,7 @@
 
 <script>
     function ImportEditController($scope, $routeParams) {
-        $scope.content = { tabs: [{ id: 1, label: "Import Data" }, { id: 2, label: "New Tab" }] };
+        $scope.content = { tabs: [{ id: 1, label: "Step 1" }, { id: 2, label: "Step 2" }, { id: 3, label: "Step 3" }, { id: 4, label: "Step 4" }] };
 
         $scope.Import = function (type) {
             console.log("This will be the export function for " + type + " files.");
@@ -39,8 +39,97 @@
 
             <umb-tab id="tab2">
                 <div class="umb-pane">
-                    <h3>New tab</h3><br />
-                    Place some content here
+                    <h3>Choose a document type</h3><br />
+                    <p>Choose a parent page for the content</p>
+                </div>
+            </umb-tab>
+
+            <umb-tab id="tab3">
+                <div class="umb-pane">
+                    <h3>Link the fields</h3><br />
+                    <p>Link the fields of the imported file with the properties of the chosen document type</p><br /><br />
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><b>Page Title</b></td>
+                                <td>
+                                    <select style="margin-left:40px;">
+                                        <option>EMPTY</option>
+                                        <option>pagina_titel</option>
+                                        <option>inhoud</option>
+                                        <option>seo_beschrijving</option>
+                                        <option>seo_tags</option>
+                                        <option>verberg_van_navigatie</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Content</b></td>
+                                <td>
+                                    <select style="margin-left:40px;">
+                                        <option>EMPTY</option>
+                                        <option>pagina_titel</option>
+                                        <option>inhoud</option>
+                                        <option>seo_beschrijving</option>
+                                        <option>seo_tags</option>
+                                        <option>verberg_van_navigatie</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Description</b></td>
+                                <td>
+                                    <select style="margin-left:40px;">
+                                        <option>EMPTY</option>
+                                        <option>pagina_titel</option>
+                                        <option>inhoud</option>
+                                        <option>seo_beschrijving</option>
+                                        <option>seo_tags</option>
+                                        <option>verberg_van_navigatie</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Keywords</b></td>
+                                <td>
+                                    <select style="margin-left:40px;">
+                                        <option>EMPTY</option>
+                                        <option>pagina_titel</option>
+                                        <option>inhoud</option>
+                                        <option>seo_beschrijving</option>
+                                        <option>seo_tags</option>
+                                        <option>verberg_van_navigatie</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><b>Hide in Navigation</b></td>
+                                <td>
+                                    <select style="margin-left:40px;">
+                                        <option>EMPTY</option>
+                                        <option>pagina_titel</option>
+                                        <option>inhoud</option>
+                                        <option>seo_beschrijving</option>
+                                        <option>seo_tags</option>
+                                        <option>verberg_van_navigatie</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table><br /><br />
+                    <button type="button" class="btn umb-button__button btn-success umb-button--">Start Importing</button>
+                </div>
+            </umb-tab>
+
+            <umb-tab id="tab4">
+                <div class="umb-pane">
+                    <p class="alert alert-block alert-success umb-notifications__notification animated -half-second fadeIn" style="border-radius:6px;">
+                        Successfully imported the content!
+                    </p><br />
+                    <h3>Upload a file</h3><br />
+                    Import data by uploading a file<br /><br />
+                    <input type="file" umb-file-upload style="font-size:12px;line-height:1px;" /><br /><br />
+                    <button type="button" class="btn umb-button__button btn-success umb-button--">Upload</button>
                 </div>
             </umb-tab>
 
