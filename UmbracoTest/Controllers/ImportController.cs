@@ -11,9 +11,9 @@ namespace UmbracoTest.Controllers
     public class ImportController : SurfaceController
     {
         [HttpPost][ValidateInput(false)]
-        public async Task<JsonResult> ReadXMLFile(string xmlFile)
+        public async Task<JsonResult> ReadXMLFile(HttpPostedFileBase file)
         {
-            // Execute a function from the 'ImportService'...
+            // Execute a function from the 'ImportService'.
             return Json("File uploaded successfully!");
         }
     }

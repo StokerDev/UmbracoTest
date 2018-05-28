@@ -338,5 +338,5 @@ C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csproj
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csproj.CopyComplete
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.dll
 C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.pdb
-C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csprojResolveAssemblyReference.cache
 C:\Users\Marco\Documents\Visual Studio 2017\Projects\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csprojAssemblyReference.cache
+C:\Users\Marco\source\repos\UmbracoTest\UmbracoTest\obj\Debug\UmbracoTest.csprojAssemblyReference.cache
