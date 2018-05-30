@@ -1,0 +1,119 @@
+﻿<!-- **************************************** OPTION 1 **************************************** -->
+<!--<div ng-controller="CustomSectionEditController">
+    <ng-form>
+        <div ng-controller="Umbraco.PropertyEditors.RTEController" class="umb-editor umb-rte">
+            <textarea ng-model="model.value" rows="10" id="{{model.alias}}_rte"></textarea>
+        </div>
+        <pre>
+            Value from the RTE {{model.value}}
+        </pre>
+    </ng-form>
+</div>
+
+<script type="text/javascript">
+    function CustomSectionEditController($scope) {
+
+        $scope.model = {
+            alias: 'myRichtexteditor',
+            config: {
+                editor: {
+                    toolbar: ["code", "undo", "redo", "cut", "styleselect", "bold", "italic", "alignleft", "aligncenter", "alignright", "bullist", "numlist", "link", "umbmediapicker", "umbmacro", "table", "umbembeddialog"],
+                    stylesheets: [],
+                    dimensions: { height: 400, width: 250 }
+                }
+
+            }
+        };
+    }
+</script>-->
+<!-- **************************************** /OPTION 1 **************************************** -->
+
+
+<!-- **************************************** OPTION 2 **************************************** -->
+<!--<div ng-controller="CustomSectionEditController">
+    <ng-form>
+        <umb-editor model="myProperty"></umb-editor>
+        <pre>
+            Value from the RTE {{myProperty.value}}
+        </pre>
+    </ng-form>
+</div>
+
+<script type="text/javascript">
+    function CustomSectionEditController($scope) {
+        $scope.myProperty = {
+            label: 'bodyText',
+            description: 'Load some stuff here',
+            view: 'rte',
+            config: {
+                editor: {
+                    toolbar: ["code", "undo", "redo", "cut", "styleselect", "bold", "italic", "alignleft", "aligncenter", "alignright", "bullist", "numlist", "link", "umbmediapicker", "umbmacro", "table", "umbembeddialog"],
+                    stylesheets: [],
+                    dimensions: { height: 400, width: 250 }
+                }
+            }
+        };
+    }
+</script>-->
+<!-- **************************************** /OPTION 2 **************************************** -->
+
+
+<!-- **************************************** OPTION 3 **************************************** -->
+<!--<div ng-controller="CustomSectionEditController">
+    <ng-form>
+        <umb-property property="property"
+                      ng-repeat="property in properties">
+            <umb-editor model="property"></umb-editor>
+        </umb-property>
+        <pre>
+            Value from the RTE {{properties[0].value}}
+        </pre>
+    </ng-form>
+</div>
+
+<script type="text/javascript">
+    function CustomSectionEditController($scope, $http) {
+        $http({ method: 'GET', url: '/url/to/our/cool/service' })
+            .success(function (data) {
+                $scope.property = {
+                    label: 'bodyText',
+                    description: 'Load some stuff here',
+                    view: 'rte',
+                    config: {
+                        editor: {
+                            toolbar: ["code", "undo", "redo", "cut", "styleselect", "bold", "italic", "alignleft", "aligncenter", "alignright", "bullist", "numlist", "link", "umbmediapicker", "umbmacro", "table", "umbembeddialog"],
+                            stylesheets: [],
+                            dimensions: { height: 400, width: 250 }
+                        }
+                    },
+                    value: data
+                };
+
+            })
+            .error(function () {
+                $scope.error = "An Error has occured while loading!";
+            });
+    }
+</script>-->
+<!-- **************************************** /OPTION 3 **************************************** -->
+
+
+<!-- **************************************** CONTENT PICKER **************************************** -->
+<div ng-controller="CustomContentPickerSectionController">
+    <ng-form>
+        <umb-editor model="contentPicker"></umb-editor>
+        <pre>
+            Value from the Content Picker: {{contentPicker.value}}
+        </pre>
+    </ng-form>
+</div>
+
+<script type="text/javascript">
+    function CustomContentPickerSectionController($scope) {
+        $scope.contentPicker = {
+            view: "contentPicker",
+            config: { }
+        };
+    }
+</script>
+<!-- **************************************** /CONTENT PICKER **************************************** -->

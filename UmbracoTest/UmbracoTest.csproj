@@ -292,6 +292,7 @@
     <Content Include="scripts\modernizr-2.6.2.js" />
     <Content Include="scripts\umbraco-starterkit-app.js" />
     <Content Include="Umbraco\Views\dashboard\default\importcontent.html" />
+    <Content Include="Umbraco\Views\dashboard\default\propertyeditor.html" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
